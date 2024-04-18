@@ -23,7 +23,7 @@ public class HibernateConfiguration
 		ps.put("hibernate.connection.username", "root")	;
 		ps.put(Environment.PASS, "Alok@2001");
 		ps.put(Environment.SHOW_SQL, "true");
-		ps.put(Environment.HBM2DDL_AUTO, "update");
+		ps.put(Environment.HBM2DDL_AUTO, "create");
 		ps.put(Environment.FORMAT_SQL, "true");
 		
 		StandardServiceRegistry ssr = new StandardServiceRegistryBuilder().applySettings(ps).build();
