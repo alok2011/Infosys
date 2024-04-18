@@ -14,6 +14,8 @@ public class Runner
 	{
 		Student Alok = new Student(3,"Ramakant","Male","Delhi");
 		System.out.println("HQL");
+		
+		
 		SessionFactory sf = HibernateConfiguration.getSessionFactory();
 		Session session = sf.openSession();
 		Transaction tx = session.beginTransaction();
